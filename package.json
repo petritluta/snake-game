@@ -7,7 +7,7 @@
     "test": "jest --passWithNoTests --coverage",
     "start": "live-server",
     "build": "rm -rf /build && tsc",
-    "cd": "npm run build && npm publish"
+    "cd": "npm run build && npm version patch  && npm publish"
   },
   "files": ["/build/**/*"],
   "author": "whizz",
