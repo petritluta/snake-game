@@ -1,6 +1,6 @@
 {
   "name": "@petritluta/snake-game",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser snake game",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
     "build": "rm -rf /build && tsc",
     "cd": "npm run build && npm version patch  && npm publish"
   },
-  "files": ["/build/**/*"],
+  "files": [
+    "/build/**/*"
+  ],
   "author": "whizz",
   "license": "ISC",
   "devDependencies": {
