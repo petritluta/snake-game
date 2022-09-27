@@ -6,8 +6,10 @@
   "scripts": {
     "test": "jest --passWithNoTests --coverage",
     "start": "live-server",
-    "build": "rm -rf /build && tsc",
-    "cd": "npm run build && npm version patch  && npm publish"
+    "build": "rm -rf /build && webpack",
+    "build:dev": "rm -rf /build && webpack --config ./webpack.config.dev.js",
+    "cd": "npm run build && npm version patch  && npm publish",
+    "ci": "prettier --write . &&  eslint src/**/*.ts --ignore-pattern *.test.ts && npm run test"
   },
   "files": [
     "/build/**/*"
